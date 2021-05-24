@@ -1,0 +1,36 @@
+@use "../../../functions" as *;
+@use "../../../variables" as *;
+@use "../variables" as *;
+
+$check-margin-bottom: 0.125rem !default;
+
+$check-input-height: 1.25em !default;
+$check-input-margin-top: 0.125em !default;
+$check-input-spacing: 0.5em !default;
+$check-input-border-width: $border-width !default;
+$check-input-border-color: $border-color !default;
+$check-input-transition-duration: $transition-duration !default;
+
+$check-input-checked-background-color: $primary !default;
+
+$check-focus-box-shadow: $focus-box-shadow !default;
+
+$check-input-active-background-color: color($gray, -80) !default;
+
+$check-input-checkbox-border-radius: $border-radius !default;
+$check-input-checkbox-background-size: 1.25em !default;
+
+$check-input-checkbox-checked-background-image: url(bootstrap-icon("check", $white)) !default;
+
+$check-input-radio-background-size: 0.5em !default;
+
+$check-input-radio-checked-background-image: url(bootstrap-icon("circle", $white)) !default;
+
+$check-switch-input-width: 2.25em !default;
+$check-switch-background-color: color($gray, -80) !default;
+$check-switch-input-background-image: url(bootstrap-icon("circle", $white)) !default;
+$check-switch-input-background-size: 1em !default;
+
+$check-switch-active-background-color: color($gray, -70) !default;
+
+$check-input-disabled-opacity: 0.5 !default;

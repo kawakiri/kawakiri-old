@@ -1,0 +1,24 @@
+@use "../../variables" as *;
+
+$tabs-border-bottom-width: $border-width !default;
+$tabs-border-bottom-color: $border-color !default;
+
+$tabs-link-padding-y: 0.5em !default;
+$tabs-link-padding-x: 1em !default;
+$tabs-link-border-width: $border-width !default;
+$tabs-link-border-radius: $border-radius !default;
+$tabs-link-color: $gray !default;
+$tabs-link-transition-duration: $transition-duration !default;
+
+$tabs-link-hover-z-index: $hover-z-index !default;
+$tabs-link-hover-background-color: $hover-background-color !default;
+
+$tabs-link-focus-z-index: $focus-z-index !default;
+$tabs-link-focus-box-shadow: $focus-box-shadow !default;
+
+$tabs-link-active-color: $primary !default;
+
+$tabs-lined-link-active-line-width: $tabs-border-bottom-width * 2 !default;
+$tabs-lined-link-active-line-color: $primary !default;
+
+$tabs-outline-link-active-line-color: $white !default;

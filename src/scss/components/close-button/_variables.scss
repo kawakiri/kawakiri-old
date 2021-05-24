@@ -1,0 +1,10 @@
+@use "../../functions" as *;
+@use "../../variables" as *;
+
+$close-button-width: 2.5em !default;
+$close-button-color: $color !default;
+$close-button-image: url(bootstrap-icon("close", $close-button-color)) !default;
+$close-button-opacity: 0.5 !default;
+
+$close-button-focus-box-shadow: $focus-box-shadow !default;
+$close-button-focus-opacity: 0.75 !default;

@@ -1,0 +1,17 @@
+@use "../../variables" as *;
+
+$form-field-padding-y: 0.375em !default;
+$form-field-padding-x: 0.75em !default;
+$form-field-border-width: $border-width !default;
+$form-field-border-color: $border-color !default;
+$form-field-border-radius: $border-radius !default;
+$form-field-background-color: $white !default;
+$form-field-transition-duration: $transition-duration !default;
+
+$form-field-focus-border-color: $primary !default;
+
+$form-field-disabled-background-color: $disabled-background-color !default;
+
+$form-field-sm-font-size: 0.85em !default;
+
+$form-field-lg-font-size: 1.25em !default;

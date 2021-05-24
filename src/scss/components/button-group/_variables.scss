@@ -1,0 +1,5 @@
+@use "../../variables" as *;
+
+$button-group-button-hover-z-index: $hover-z-index !default;
+
+$button-group-button-focus-z-index: $focus-z-index !default;

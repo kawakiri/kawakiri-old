@@ -1,0 +1,32 @@
+@use "../../functions" as *;
+@use "variables" as *;
+
+.alert {
+    padding: $alert-padding-y $alert-padding-x;
+    border-radius: $alert-border-radius;
+
+    @each $color-name, $color in $alert-colors {
+        &--#{$color-name} {
+            background-color: color($color, $alert-background-color-level);
+            color: color($color, $alert-color-level);
+        }
+    }
+
+    &--hideable {
+        transition: $alert-transition-duration opacity;
+    }
+
+    &--hidden {
+        opacity: 0;
+    }
+
+    &__close-button {
+        float: right;
+        margin-top: $alert-close-button-margin-top;
+        margin-right: $alert-close-button-margin-right;
+    }
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}

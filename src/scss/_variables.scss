@@ -1,0 +1,114 @@
+@use "functions" as *;
+
+$white: #fff !default;
+$black: #000 !default;
+$color: #222 !default;
+$gray: color($color, -30) !default;
+
+$primary: #0b70f2 !default;
+$success: #45b327 !default;
+$warning: #ffb300 !default;
+$danger: #d93b3b !default;
+
+$colors: (
+    "primary": $primary,
+    "success": $success,
+    "warning": $warning,
+    "danger": $danger
+) !default;
+
+$active-color: color($gray, -20) !default;
+$disabled-color: color($gray, -20) !default;
+
+$background-color: color($gray, -95) !default;
+$hover-background-color: color($gray, -90) !default;
+$active-background-color: $primary !default;
+$disabled-background-color: color($gray, -90) !default;
+
+$border-width: 1px !default;
+$border-color: color($gray, -80) !default;
+$border-color-lighter: color($gray, -85) !default;
+$border-radius: 0.375em !default;
+
+$hover-z-index: 1 !default;
+
+$focus-z-index: 2 !default;
+$focus-box-shadow: 0 0 0 0.25rem rgba($primary, 0.5) !default;
+
+$shadow: 0 0.125rem 0.375rem rgba($black, 0.15) !default;
+$shadow-small: 0 0.125rem 0.25rem rgba($black, 0.075) !default;
+
+$font-family: Roboto, Arial, sans-serif !default;
+$font-size: 16px !default;
+$font-size-small: 0.85em !default;
+$line-height: 1.5 !default;
+
+$transition-duration: 0.2s !default;
+
+$link-text-decoration: underline !default;
+$link-color: $primary !default;
+$link-hover-text-decoration: null !default;
+$link-hover-color: color($link-color, 30) !default;
+
+$spacing: 1rem !default;
+$spacing-y: $spacing !default;
+$spacing-x: $spacing !default;
+$spacings: (
+    0: 0,
+    1: $spacing * 0.25,
+    2: $spacing * 0.5,
+    3: $spacing,
+    4: $spacing * 1.5,
+    5: $spacing * 2,
+    6: $spacing * 3,
+    7: $spacing * 4
+) !default;
+
+$paragraph-margin-top: 0 !default;
+$paragraph-margin-bottom: $spacing !default;
+
+$heading-margin-top: 0 !default;
+$heading1-margin-top: $heading-margin-top !default;
+$heading2-margin-top: $heading-margin-top !default;
+$heading3-margin-top: $heading-margin-top !default;
+$heading4-margin-top: $heading-margin-top !default;
+$heading5-margin-top: $heading-margin-top !default;
+$heading6-margin-top: $heading-margin-top !default;
+
+$heading-margin-bottom: 0.5rem !default;
+$heading1-margin-bottom: $heading-margin-bottom !default;
+$heading2-margin-bottom: $heading-margin-bottom !default;
+$heading3-margin-bottom: $heading-margin-bottom !default;
+$heading4-margin-bottom: $heading-margin-bottom !default;
+$heading5-margin-bottom: $heading-margin-bottom !default;
+$heading6-margin-bottom: $heading-margin-bottom !default;
+
+$heading1-font-size: 2.5rem !default;
+$heading2-font-size: 2.25rem !default;
+$heading3-font-size: 2rem !default;
+$heading4-font-size: 1.75rem !default;
+$heading5-font-size: 1.5rem !default;
+$heading6-font-size: 1.25rem !default;
+
+$heading-line-height: 1.2 !default;
+$heading1-line-height: $heading-line-height !default;
+$heading2-line-height: $heading-line-height !default;
+$heading3-line-height: $heading-line-height !default;
+$heading4-line-height: $heading-line-height !default;
+$heading5-line-height: $heading-line-height !default;
+$heading6-line-height: $heading-line-height !default;
+
+$heading-font-weight: 400 !default;
+$heading1-font-weight: $heading-font-weight !default;
+$heading2-font-weight: $heading-font-weight !default;
+$heading3-font-weight: $heading-font-weight !default;
+$heading4-font-weight: $heading-font-weight !default;
+$heading5-font-weight: $heading-font-weight !default;
+$heading6-font-weight: $heading-font-weight !default;
+
+$list-margin-top: 0 !default;
+$list-margin-bottom: $spacing !default;
+$ul-ol-padding-left: 2.5rem !default;
+$dt-font-weight: 700 !default;
+$dd-margin-bottom: 0.5rem !default;
+$dd-padding-left: $ul-ol-padding-left !default;

@@ -1,0 +1,66 @@
+@use "../../mixins" as *;
+@use "variables" as *;
+
+.sidebar {
+    padding: $sidebar-padding-y $sidebar-padding-x;
+
+    &__title {
+        display: block;
+        margin-bottom: $sidebar-title-margin-bottom;
+        font-size: $sidebar-title-font-size;
+        color: $sidebar-title-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $sidebar-title-color;
+            text-decoration: none;
+        }
+    }
+
+    &__menu {
+        margin-right: -$sidebar-padding-x;
+        margin-left: -$sidebar-padding-x;
+        @include unstyled-list;
+
+        &--nested {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    &__link {
+        display: block;
+        position: relative;
+        padding: $sidebar-link-padding-y $sidebar-padding-x;
+        color: $sidebar-link-color;
+        text-decoration: none;
+
+        .sidebar__menu--nested & {
+            padding-left: $sidebar-padding-x + $sidebar-menu-nested-spacing;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $sidebar-link-hover-background-color;
+        }
+
+        &:hover {
+            color: $sidebar-link-color;
+            text-decoration: none;
+        }
+
+        &.active {
+            color: $sidebar-link-active-color;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: $sidebar-link-active-line-width;
+                background-color: $sidebar-link-active-line-color;
+            }
+        }
+    }
+}

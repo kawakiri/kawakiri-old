@@ -1,0 +1,85 @@
+@use "variables" as *;
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: $modal-z-index;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $modal-background-color;
+    opacity: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: opacity $modal-transition-duration;
+
+    &--shown {
+        opacity: 1;
+    }
+
+    &-body {
+        overflow: hidden;
+    }
+
+    &__dialog {
+        box-sizing: content-box;
+        width: $modal-dialog-width;
+        padding: $modal-dialog-padding-y $modal-dialog-padding-x;
+        margin: auto;
+
+        &--sm {
+            width: $modal-dialog-sm-width;
+        }
+
+        &--lg {
+            width: $modal-dialog-lg-width;
+        }
+    }
+
+    &__content {
+        border-radius: $modal-dialog-border-radius;
+        background-color: $modal-dialog-background-color;
+        overflow: hidden;
+    }
+
+    &__header {
+        display: flex;
+        padding-top: $modal-header-padding-top;
+        padding-right: $modal-header-padding-x;
+        padding-left: $modal-header-padding-x;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__close-button {
+        flex-shrink: 0;
+        margin-top: $modal-close-button-margin-top;
+        margin-right: $modal-close-button-margin-right;
+        margin-left: auto;
+    }
+
+    &__body {
+        padding: $modal-body-padding-y $modal-body-padding-x;
+
+        > :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: $modal-footer-padding-y $modal-footer-padding-x;
+        background-color: $modal-footer-background-color;
+
+        > :not(:last-child) {
+            margin-right: 0.5rem;
+        }
+    }
+}

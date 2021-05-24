@@ -1,0 +1,191 @@
+@use "variables" as *;
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}
+
+body {
+    margin: 0;
+}
+
+small
+.small {
+    font-size: $font-size-small;
+}
+
+a {
+    text-decoration: $link-text-decoration;
+    color: $link-color;
+}
+
+a:hover {
+    text-decoration: $link-hover-text-decoration;
+    color: $link-hover-color;
+}
+
+p {
+    margin-top: $paragraph-margin-top;
+    margin-bottom: $paragraph-margin-bottom;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin-top: $heading-margin-top;
+    margin-bottom: $heading-margin-bottom;
+    line-height: $heading-line-height;
+    font-weight: $heading-font-weight;
+}
+
+h1,
+.h1 {
+    margin-top: if($heading1-margin-top == $heading-margin-top, null, $heading1-margin-top);
+    margin-bottom: if($heading1-margin-bottom == $heading-margin-bottom, null, $heading1-margin-bottom);
+    font-size: $heading1-font-size;
+    line-height: if($heading1-line-height == $heading-line-height, null, $heading1-line-height);
+    font-weight: if($heading1-font-weight == $heading-font-weight, null, $heading1-font-weight);
+}
+
+h2,
+.h2 {
+    margin-top: if($heading2-margin-top == $heading-margin-top, null, $heading2-margin-top);
+    margin-bottom: if($heading2-margin-bottom == $heading-margin-bottom, null, $heading2-margin-bottom);
+    font-size: $heading2-font-size;
+    line-height: if($heading2-line-height == $heading-line-height, null, $heading2-line-height);
+    font-weight: if($heading2-font-weight == $heading-font-weight, null, $heading2-font-weight);
+}
+
+h3,
+.h3 {
+    margin-top: if($heading3-margin-top == $heading-margin-top, null, $heading3-margin-top);
+    margin-bottom: if($heading3-margin-bottom == $heading-margin-bottom, null, $heading3-margin-bottom);
+    font-size: $heading3-font-size;
+    line-height: if($heading3-line-height == $heading-line-height, null, $heading3-line-height);
+    font-weight: if($heading3-font-weight == $heading-font-weight, null, $heading3-font-weight);
+}
+
+h4,
+.h4 {
+    margin-top: if($heading4-margin-top == $heading-margin-top, null, $heading4-margin-top);
+    margin-bottom: if($heading4-margin-bottom == $heading-margin-bottom, null, $heading4-margin-bottom);
+    font-size: $heading4-font-size;
+    line-height: if($heading4-line-height == $heading-line-height, null, $heading4-line-height);
+    font-weight: if($heading4-font-weight == $heading-font-weight, null, $heading4-font-weight);
+}
+
+h5,
+.h5 {
+    margin-top: if($heading5-margin-top == $heading-margin-top, null, $heading5-margin-top);
+    margin-bottom: if($heading5-margin-bottom == $heading-margin-bottom, null, $heading5-margin-bottom);
+    font-size: $heading5-font-size;
+    line-height: if($heading5-line-height == $heading-line-height, null, $heading5-line-height);
+    font-weight: if($heading5-font-weight == $heading-font-weight, null, $heading5-font-weight);
+}
+
+h6,
+.h6 {
+    margin-top: if($heading6-margin-top == $heading-margin-top, null, $heading6-margin-top);
+    margin-bottom: if($heading6-margin-bottom == $heading-margin-bottom, null, $heading6-margin-bottom);
+    font-size: $heading6-font-size;
+    line-height: if($heading6-line-height == $heading-line-height, null, $heading6-line-height);
+    font-weight: if($heading6-font-weight == $heading-font-weight, null, $heading6-font-weight);
+}
+
+ul,
+ol,
+dl {
+    margin-top: $list-margin-top;
+    margin-bottom: $list-margin-bottom;
+}
+
+ul,
+ol {
+    padding-left: $ul-ol-padding-left;
+}
+
+dt {
+    font-weight: $dt-font-weight;
+}
+
+dd {
+    margin-bottom: $dd-margin-bottom;
+    margin-left: 0;
+    padding-left: $dd-padding-left;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin-top: if($list-margin-top == 0, null, 0);
+    margin-bottom: if($list-margin-bottom == 0, null, 0);
+}
+
+blockquote,
+figure {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select,
+optgroup {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0s !important;
+    }
+}

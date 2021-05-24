@@ -1,0 +1,78 @@
+@use "sass:math";
+@use "variables" as *;
+
+.check {
+    &-container {
+        display: flex;
+    }
+
+    &-input {
+        width: $check-input-height;
+        height: $check-input-height;
+        border: $check-input-border-width solid $check-input-border-color;
+        background-position: center;
+        background-repeat: no-repeat;
+        appearance: none;
+        transition: border-color $check-input-transition-duration, background-color $check-input-transition-duration, background-position $check-input-transition-duration, box-shadow $check-input-transition-duration;
+
+        &:checked {
+            border-color: transparent;
+            background-color: $check-input-checked-background-color;
+        }
+
+        &:focus {
+            outline: 0;
+            box-shadow: $check-focus-box-shadow;
+        }
+
+        &:active:not(:disabled) {
+            border-color: transparent;
+            background-color: $check-input-active-background-color;
+        }
+
+        &[type="checkbox"]:not(&--switch) {
+            border-radius: $check-input-checkbox-border-radius;
+            background-size: $check-input-checkbox-background-size;
+
+            &:checked {
+                background-image: $check-input-checkbox-checked-background-image;
+            }
+        }
+
+        &[type="radio"] {
+            border-radius: 50%;
+            background-size: $check-input-radio-background-size;
+
+            &:checked {
+                background-image: $check-input-radio-checked-background-image;
+            }
+        }
+
+        &--switch {
+            width: $check-switch-input-width;
+            border-color: transparent;
+            border-radius: math.div($check-input-height, 2);
+            background-color: $check-switch-background-color;
+            background-image: $check-switch-input-background-image;
+            background-position: 1px;
+            background-size: $check-switch-input-background-size;
+
+            &:checked {
+                background-position: right 1px center;
+            }
+
+            &:active:not(:disabled) {
+                background-color: $check-switch-active-background-color;
+            }
+        }
+
+        &:disabled,
+        &:disabled + .check-label {
+            opacity: $check-input-disabled-opacity;
+        }
+    }
+
+    &-label {
+        margin-left: $check-input-spacing;
+    }
+}

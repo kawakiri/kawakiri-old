@@ -1,0 +1,47 @@
+@use "../../variables" as *;
+
+$button-colors: (
+    primary: $primary,
+    danger: $danger
+) !default;
+
+$button-padding-y: 0.375em !default;
+$button-padding-x: 0.5em !default;
+$button-border-width: $border-width !default;
+$button-border-radius: $border-radius !default;
+$button-color-level: 0 !default;
+$button-transition-duration: $transition-duration !default;
+
+$button-hover-background-color-level: -85 !default;
+
+$button-focus-box-shadow: $focus-box-shadow !default;
+
+$button-active-background-color-level: -80 !default;
+
+$button-disabled-color: $disabled-color !default;
+
+$button-outline-padding-x: 1em !default;
+$button-outline-border-color-level: 0 !default;
+
+$button-outline-hover-border-color-level: null !default;
+
+$button-outline-active-border-color-level: null !default;
+
+$button-outline-disabled-border-color: $disabled-background-color !default;
+
+$button-filled-padding-x: $button-outline-padding-x !default;
+$button-filled-border-color-level: null !default;
+$button-filled-background-color-level: 0 !default;
+$button-filled-color: $white !default;
+
+$button-filled-hover-border-color-level: null !default;
+$button-filled-hover-background-color-level: 15 !default;
+
+$button-filled-active-border-color-level: null !default;
+$button-filled-active-background-color-level: 20 !default;
+
+$button-filled-disabled-background-color: $disabled-background-color !default;
+
+$button-sm-font-size: 0.85em !default;
+
+$button-lg-font-size: 1.25em !default;

@@ -1,0 +1,24 @@
+@use "../../../functions" as *;
+@use "../../../variables" as *;
+@use "../variables" as *;
+
+$select-padding-y: $form-field-padding-y !default;
+$select-padding-x: $form-field-padding-x !default;
+$select-border-width: $form-field-border-width !default;
+$select-border-color: $form-field-border-color !default;
+$select-border-radius: $form-field-border-radius !default;
+$select-background-color: $form-field-background-color !default;
+$select-transition-duration: $form-field-transition-duration !default;
+
+$select-arrow-color: $color !default;
+$select-arrow-image: url(bootstrap-icon("arrow-down", $select-arrow-color)) !default;
+$select-arrow-width: 0.75em !default;
+$select-arrow-spacing: 0.25em !default;
+
+$select-focus-border-color: $form-field-focus-border-color !default;
+
+$select-disabled-background-color: $form-field-disabled-background-color !default;
+
+$select-sm-font-size: $form-field-sm-font-size !default;
+
+$select-lg-font-size: $form-field-lg-font-size !default;

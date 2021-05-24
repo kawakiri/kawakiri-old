@@ -1,0 +1,36 @@
+@use "input-group-variables" as *;
+
+.input-group-text {
+    padding: $input-group-text-padding-y $input-group-text-padding-x;
+    background-color: $input-group-text-background-color;
+    border: $input-group-text-border-width solid $input-group-text-border-color;
+    border-radius: $input-group-text-border-radius;
+    color: $input-group-text-color;
+}
+
+.input-group {
+    display: flex;
+
+    > :not(:first-child) {
+        margin-left: -1px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    > :not(:last-child) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    > input {
+        z-index: 0;
+    }
+
+    > .button {
+        z-index: 1;
+    }
+
+    > input:focus, > .button:focus {
+        z-index: 2;
+    }
+}

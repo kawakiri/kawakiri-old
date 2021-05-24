@@ -1,0 +1,40 @@
+@use "../../../variables" as *;
+@use "variables" as *;
+
+.text-field {
+    display: block;
+    width: 100%;
+    padding: $text-field-padding-y $text-field-padding-x;
+    border: $text-field-border-width solid $text-field-border-color;
+    border-radius: $text-field-border-radius;
+    background-color: $text-field-background-color;
+    transition: border-color $text-field-transition-duration;
+
+    &::placeholder {
+        color: $text-field-placeholder-color;
+        opacity: 1;
+    }
+
+    &:focus {
+        border-color: $text-field-focus-border-color;
+        outline: 0;
+    }
+
+    &:disabled,
+    &[readonly] {
+        background-color: $text-field-disabled-background-color;
+    }
+
+    &--sm {
+        font-size: $text-field-sm-font-size;
+    }
+
+    &--lg {
+        font-size: $text-field-lg-font-size;
+    }
+}
+
+textarea.text-field {
+    min-height: calc(#{$line-height * 1em} + #{$text-field-padding-y * 2} + #{$text-field-border-width * 2});
+    resize: vertical;
+}

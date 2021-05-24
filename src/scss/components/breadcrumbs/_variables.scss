@@ -1,0 +1,7 @@
+@use "../../variables" as *;
+
+$breadcrumbs-item-active-color: $active-color !default;
+
+$breadcrumbs-item-separator: "/" !default;
+$breadcrumbs-item-separator-margin-x: 0.5em !default;
+$breadcrumbs-item-separator-color: $breadcrumbs-item-active-color !default;

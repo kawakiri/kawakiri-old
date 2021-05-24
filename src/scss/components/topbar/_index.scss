@@ -1,0 +1,61 @@
+@use "../../mixins" as *;
+@use "variables" as *;
+
+.topbar {
+    display: flex;
+    align-items: center;
+    padding-right: $topbar-padding-x;
+    padding-left: $topbar-padding-x;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        margin-right: $topbar-title-margin-right;
+        font-size: $topbar-title-font-size;
+        color: $topbar-title-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $topbar-title-color;
+            text-decoration: none;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        @include unstyled-list;
+    }
+
+    &__link {
+        display: block;
+        position: relative;
+        padding: $topbar-link-padding-y $topbar-link-padding-x;
+        color: $topbar-link-color;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            background-color: $topbar-link-hover-background-color;
+        }
+
+        &:hover {
+            color: $topbar-link-color;
+            text-decoration: none;
+        }
+
+        &.active {
+            color: $topbar-link-active-color;
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                height: $topbar-link-active-line-width;
+                background-color: $topbar-link-active-line-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@use "../../functions" as *;
+@use "../../variables" as *;
+
+$card-border-width: null !default;
+$card-border-color: null !default;
+$card-border-radius: $border-radius !default;
+
+$card-header-padding-y: 0.75em !default;
+$card-header-padding-x: 1em !default;
+$card-header-background-color: color($gray, -95) !default;
+
+$card-body-padding-y: 1em !default;
+$card-body-padding-x: 1em !default;
+
+$card-title-margin-bottom: 0.75em !default;
+
+$card-subtitle-margin-top: -$card-title-margin-bottom !default;
+$card-subtitle-color: $gray !default;
+
+$card-footer-padding-y: 0.75em !default;
+$card-footer-padding-x: 1em !default;
+$card-footer-background-color: color($gray, -95) !default;

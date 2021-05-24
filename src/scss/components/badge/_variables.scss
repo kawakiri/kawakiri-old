@@ -1,0 +1,8 @@
+@use "../../variables" as *;
+
+$badge-padding-y: 0.25em !default;
+$badge-padding-x: 0.5em !default;
+$badge-border-radius: 0.75em !default;
+$badge-background-color: $primary !default;
+$badge-color: $white !default;
+$badge-font-size: $font-size-small !default;

@@ -1,0 +1,19 @@
+@use "variables" as *;
+
+.close-button {
+    width: $close-button-width;
+    height: $close-button-width;
+    background-image: $close-button-image;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: $close-button-opacity;
+
+    &:hover {
+        opacity: $close-button-focus-opacity;
+    }
+
+    &:focus {
+        box-shadow: $close-button-focus-box-shadow;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,18 @@
+@use "../../variables" as *;
+
+$alert-colors: (
+    primary: $primary,
+    success: $success,
+    warning: $warning,
+    danger: $danger
+) !default;
+
+$alert-padding-y: 1em !default;
+$alert-padding-x: 1em !default;
+$alert-border-radius: $border-radius !default;
+$alert-background-color-level: -90 !default;
+$alert-color-level: 60 !default;
+$alert-transition-duration: $transition-duration !default;
+
+$alert-close-button-margin-top: -1em !default;
+$alert-close-button-margin-right: -1em !default;

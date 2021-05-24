@@ -1,0 +1,21 @@
+@use "../../functions" as *;
+@use "../../variables" as *;
+
+$progress-height: 1em !default;
+$progress-border-radius: $border-radius !default;
+$progress-background-color: color($gray, -80) !default;
+
+$progress-bar-background-color: $primary !default;
+$progress-bar-font-size: 0.75em !default;
+$progress-bar-color: $white !default;
+
+$progress-bar-striped-background-image: linear-gradient(
+    45deg,
+    transparency($white, 80) 25%,
+    transparent 25%,
+    transparent 50%,
+    transparency($white, 80) 50%,
+    transparency($white, 80) 75%,
+    transparent 75%
+) !default;
+$progress-bar-striped-background-size: 1rem !default;

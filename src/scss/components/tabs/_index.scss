@@ -1,0 +1,84 @@
+@use "../../mixins" as *;
+@use "variables" as *;
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    @include unstyled-list;
+
+    &__link {
+        display: block;
+        position: relative;
+        padding: $tabs-link-padding-y $tabs-link-padding-x;
+        border: $tabs-link-border-width solid transparent;
+        text-decoration: none;
+        color: $tabs-link-color;
+        transition: background-color $tabs-link-transition-duration, box-shadow $tabs-link-transition-duration;
+
+        &:hover {
+            z-index: $tabs-link-hover-z-index;
+            background-color: $tabs-link-hover-background-color;
+            text-decoration: none;
+            color: $tabs-link-color;
+        }
+
+        &:focus {
+            z-index: $tabs-link-focus-z-index;
+            outline: 0;
+            box-shadow: $tabs-link-focus-box-shadow;
+        }
+
+        &.active {
+            color: $tabs-link-active-color;
+        }
+    }
+
+    &--lined,
+    &--outline {
+        border-bottom: $tabs-border-bottom-width solid $tabs-border-bottom-color;
+
+        .tabs__item {
+            margin-bottom: -$tabs-border-bottom-width;
+        }
+
+        .tabs__link {
+            border-bottom-width: if($tabs-link-border-width == $tabs-border-bottom-width, null, $tabs-border-bottom-width);
+            border-top-left-radius: $tabs-link-border-radius;
+            border-top-right-radius: $tabs-link-border-radius;
+        }
+    }
+
+    &--lined .tabs__link {
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: -$tabs-border-bottom-width;
+            left: 0;
+            height: $tabs-lined-link-active-line-width;
+        }
+
+        &.active::after {
+            background-color: $tabs-lined-link-active-line-color;
+        }
+    }
+
+    &--outline .tabs__link {
+        &.active {
+            border-color: $tabs-border-bottom-color $tabs-border-bottom-color $tabs-outline-link-active-line-color;
+            transition: border-bottom-color $tabs-link-transition-duration, background-color $tabs-link-transition-duration;
+
+            &:hover {
+                border-bottom-color: $tabs-link-hover-background-color;
+            }
+        }
+    }
+
+    &--pilled .tabs__link {
+        border-radius: $tabs-link-border-radius;
+
+        &.active {
+            border-color: $tabs-border-bottom-color;
+        }
+    }
+}

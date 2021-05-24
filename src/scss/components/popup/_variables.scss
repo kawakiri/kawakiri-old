@@ -1,0 +1,27 @@
+@use "../../variables" as *;
+
+$popup-content-z-index: 1000 !default;
+$popup-content-min-width: 10em !default;
+$popup-content-spacing: 0.125em !default;
+$popup-content-padding-y: 0.5em !default;
+$popup-content-padding-x: 1em !default;
+$popup-content-border-width: $border-width !default;
+$popup-content-border-color: $border-color !default;
+$popup-content-border-radius: $border-radius !default;
+$popup-content-background-color: $white !default;
+
+$popup-menu-spacing: 0.125em !default;
+
+$popup-item-padding-y: 0.25em !default;
+$popup-item-padding-x: 1em !default;
+$popup-item-color: $color !default;
+
+$popup-item-hover-background-color: $hover-background-color !default;
+$popup-item-hover-color: $color !default;
+
+$popup-item-active-background-color: $active-background-color !default;
+$popup-item-active-color: $color !default;
+
+$popup-separator-margin-y: 0.5em !default;
+$popup-separator-width: $border-width !default;
+$popup-separator-color: $border-color-lighter !default;

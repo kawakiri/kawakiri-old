@@ -1,0 +1,22 @@
+@use "../../../variables" as *;
+@use "../variables" as *;
+
+$file-selector-padding-y: $form-field-padding-y !default;
+$file-selector-padding-x: $form-field-padding-x !default;
+$file-selector-border-width: $form-field-border-width !default;
+$file-selector-border-color: $form-field-border-color !default;
+$file-selector-border-radius: $form-field-border-radius !default;
+$file-selector-background-color: $form-field-background-color !default;
+$file-selector-transition-duration: $form-field-transition-duration !default;
+
+$file-selector-focus-border-color: $form-field-focus-border-color !default;
+
+$file-selector-disabled-background-color: $form-field-disabled-background-color !default;
+
+$file-selector-button-background-color: $background-color !default;
+
+$file-selector-button-hover-background-color: $hover-background-color !default;
+
+$file-selector-sm-font-size: $form-field-sm-font-size !default;
+
+$file-selector-lg-font-size: $form-field-lg-font-size !default;

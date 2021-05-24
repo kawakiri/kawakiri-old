@@ -1,0 +1,41 @@
+@use "../../mixins" as *;
+@use "variables" as *;
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    @include unstyled-list;
+
+    &__link {
+        display: block;
+        position: relative;
+        padding: $pagination-link-padding-y $pagination-link-padding-x;
+        border-radius: $pagination-link-border-radius;
+        text-decoration: none;
+        color: $pagination-link-color;
+        transition: background-color $pagination-link-transition-duration, box-shadow $pagination-link-transition-duration;
+
+        &:hover {
+            z-index: $pagination-link-hover-z-index;
+            background-color: $pagination-link-hover-background-color;
+            text-decoration: none;
+            color: $pagination-link-color;
+        }
+
+        &:focus {
+            z-index: $pagination-link-focus-z-index;
+            outline: 0;
+            box-shadow: $pagination-link-focus-box-shadow;
+        }
+
+        &.active {
+            background-color: $pagination-link-active-background-color;
+            color: $pagination-link-active-color;
+        }
+
+        &.disabled {
+            color: $pagination-link-disabled-color;
+            pointer-events: none;
+        }
+    }
+}

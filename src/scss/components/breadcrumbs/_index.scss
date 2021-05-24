@@ -1,0 +1,21 @@
+@use "../../mixins" as *;
+@use "variables" as *;
+
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    @include unstyled-list;
+
+    &__item {
+        &:not(:first-child)::before {
+            content: $breadcrumbs-item-separator;
+            margin-right: $breadcrumbs-item-separator-margin-x;
+            margin-left: $breadcrumbs-item-separator-margin-x;
+            color: $breadcrumbs-item-separator-color;
+        }
+
+        &.active {
+            color: $breadcrumbs-item-active-color;
+        }
+    }
+}

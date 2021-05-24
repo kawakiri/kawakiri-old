@@ -1,0 +1,19 @@
+@use "../../variables" as *;
+
+$sidebar-padding-y: 1em !default;
+$sidebar-padding-x: 1em !default;
+
+$sidebar-title-margin-bottom: 0.5em !default;
+$sidebar-title-font-size: 1.25em !default;
+$sidebar-title-color: inherit !default;
+
+$sidebar-menu-nested-spacing: 0.75em !default;
+
+$sidebar-link-padding-y: 0.25em !default;
+$sidebar-link-color: $gray !default;
+
+$sidebar-link-hover-background-color: $hover-background-color !default;
+
+$sidebar-link-active-color: $primary !default;
+$sidebar-link-active-line-width: 2px !default;
+$sidebar-link-active-line-color: $primary !default;

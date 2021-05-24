@@ -1,0 +1,61 @@
+@use "variables" as *;
+
+.popup {
+    display: inline-block;
+    position: relative;
+
+    &__content {
+        display: none;
+        position: absolute;
+        left: 0;
+        z-index: $popup-content-z-index;
+        min-width: $popup-content-min-width;
+        margin-bottom: 0;
+        padding: $popup-content-padding-y $popup-content-padding-x;
+        border: $popup-content-border-width solid $popup-content-border-color;
+        border-radius: $popup-content-border-radius;
+        background-color: $popup-content-background-color;
+        list-style: none;
+
+        &--up {
+            bottom: 100%;
+            margin-bottom: $popup-content-spacing;
+        }
+
+        &--down {
+            top: 100%;
+            margin-top: $popup-content-spacing;
+        }
+
+        &--shown {
+            display: block;
+        }
+    }
+
+    &__item {
+        display: block;
+        margin-right: -$popup-item-padding-x;
+        margin-left: -$popup-item-padding-x;
+        padding: $popup-item-padding-y $popup-item-padding-x;
+        color: $popup-item-color;
+        white-space: nowrap;
+
+        &:hover,
+        &:focus {
+            background-color: $popup-item-hover-background-color;
+            color: $popup-item-hover-color;
+            text-decoration: none;
+        }
+
+        &:active,
+        &.active {
+            background-color: $popup-item-active-background-color;
+            color: $popup-item-active-color;
+        }
+    }
+
+    &__separator {
+        margin: $popup-separator-margin-y (-$popup-item-padding-x);
+        border-top: $popup-separator-width solid $popup-separator-color;
+    }
+}

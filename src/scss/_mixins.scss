@@ -1,0 +1,56 @@
+@use "sass:string";
+@use "sass:list";
+@use "functions" as *;
+@use "variables" as *;
+
+@mixin unstyled-list {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+@mixin visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+}
+
+@mixin media-breakpoints {
+    @each $breakpoint-name, $breakpoint-value in $grid-breakpoints {
+        $prefix: breakpoint-prefix($breakpoint-name, $breakpoint-value);
+
+        @if ($breakpoint-value == 0) {
+            @content($prefix);
+        } @else {
+            @media (min-width: $breakpoint-value) {
+                @content($prefix);
+            }
+        }
+    }
+}
+
+@mixin placement($class-base, $spacing: null) {
+    $values: (
+        ("top", "left", "bottom"),
+        ("top", "right", "bottom"),
+        ("bottom", "left", "top"),
+        ("bottom", "right", "top"),
+        ("left", "top", "right"),
+        ("left", "bottom", "right"),
+        ("right", "top", "left"),
+        ("right", "bottom", "left")
+    );
+
+    @each $value in $values {
+        .#{$class-base}-#{list.nth($value, 1)}-#{list.nth($value, 2)} {
+            #{list.nth($value, 3)}: 100%;
+            #{list.nth($value, 2)}: 0;
+            margin-#{list.nth($value, 3)}: $spacing;
+        }
+    }
+}

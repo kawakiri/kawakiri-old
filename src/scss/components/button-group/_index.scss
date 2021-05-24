@@ -1,0 +1,57 @@
+@use "../button/variables" as *;
+@use "variables" as *;
+
+.button-group {
+    display: inline-flex;
+    vertical-align: middle;
+
+    &:not(&--vertical) {
+        > .button {
+            &:not(:first-child) {
+                margin-left: -$button-border-width;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            &:not(:last-child) {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+    }
+
+    &--vertical {
+        flex-direction: column;
+
+        > .button {
+            &:not(:first-child) {
+                margin-top: -$button-border-width;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+
+            &:not(:last-child) {
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+    }
+
+    > .button {
+        &:hover {
+            z-index: $button-group-button-hover-z-index;
+        }
+
+        &:focus {
+            z-index: $button-group-button-focus-z-index;
+        }
+    }
+
+    &--sm > .button {
+        font-size: $button-sm-font-size;
+    }
+
+    &--lg > .button {
+        font-size: $button-lg-font-size;
+    }
+}

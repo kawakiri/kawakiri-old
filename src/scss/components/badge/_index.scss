@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+.badge {
+    display: inline-block;
+    padding: $badge-padding-y $badge-padding-x;
+    border-radius: $badge-border-radius;
+    background-color: $badge-background-color;
+    color: $badge-color;
+    font-size: $badge-font-size;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+}

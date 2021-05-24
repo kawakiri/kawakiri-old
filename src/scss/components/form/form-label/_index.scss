@@ -1,0 +1,6 @@
+@use "variables" as *;
+
+.form-label {
+    display: inline-block;
+    margin-bottom: $form-label-margin-bottom;
+}

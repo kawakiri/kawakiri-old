@@ -1,0 +1,102 @@
+@use "../../functions" as *;
+@use "variables" as *;
+
+.button {
+    display: inline-block;
+    padding: $button-padding-y $button-padding-x;
+    border: $button-border-width solid transparent;
+    border-radius: $button-border-radius;
+    background-color: transparent;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    transition: border-color $button-transition-duration, background-color $button-transition-duration, box-shadow $button-transition-duration;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: 0;
+        box-shadow: $button-focus-box-shadow;
+    }
+
+    @each $color-name, $color in $button-colors {
+        &--#{$color-name} {
+            color: color($color, $button-color-level);
+
+            &:hover {
+                background-color: color($color, $button-hover-background-color-level);
+            }
+
+            &:active {
+                background-color: color($color, $button-active-background-color-level);
+            }
+
+            &.button--outline {
+                border-color: color($color, $button-outline-border-color-level);
+                color: color($color, $button-color-level);
+
+                &:hover {
+                    border-color: color($color, $button-outline-hover-border-color-level);
+                }
+
+                &:active {
+                    border-color: color($color, $button-outline-active-border-color-level);
+                }
+            }
+
+            &.button--filled {
+                border-color: color($color, $button-filled-border-color-level);;
+                background-color: color($color, $button-filled-background-color-level);
+                color: $button-filled-color;
+
+                &:hover {
+                    border-color: color($color, $button-filled-hover-border-color-level);
+                    background-color: color($color, $button-filled-hover-background-color-level);
+                }
+
+                &:active {
+                    border-color: color($color, $button-filled-active-border-color-level);
+                    background-color: color($color, $button-filled-active-background-color-level);
+                }
+            }
+        }
+    }
+
+    &:disabled,
+    &.disabled {
+        color: $button-disabled-color;
+        pointer-events: none;
+    }
+
+    &--outline {
+        padding-right: $button-outline-padding-x;
+        padding-left: $button-outline-padding-x;
+
+        &:disabled,
+        &.disabled {
+            border-color: $button-outline-disabled-border-color;
+        }
+    }
+
+    &--filled {
+        padding-right: $button-filled-padding-x;
+        padding-left: $button-filled-padding-x;
+
+        &:disabled,
+        &.disabled {
+            background-color: $button-filled-disabled-background-color;
+        }
+    }
+
+    &--sm {
+        font-size: $button-sm-font-size;
+    }
+
+    &--lg {
+        font-size: $button-lg-font-size;
+    }
+}

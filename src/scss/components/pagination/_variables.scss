@@ -1,0 +1,18 @@
+@use "../../variables" as *;
+
+$pagination-link-padding-y: 0.375em !default;
+$pagination-link-padding-x: 0.75em !default;
+$pagination-link-border-radius: $border-radius !default;
+$pagination-link-color: $gray !default;
+$pagination-link-transition-duration: $transition-duration !default;
+
+$pagination-link-hover-z-index: $hover-z-index !default;
+$pagination-link-hover-background-color: $hover-background-color !default;
+
+$pagination-link-focus-z-index: $focus-z-index !default;
+$pagination-link-focus-box-shadow: $focus-box-shadow !default;
+
+$pagination-link-active-background-color: $active-background-color !default;
+$pagination-link-active-color: $white !default;
+
+$pagination-link-disabled-color: $disabled-color !default;

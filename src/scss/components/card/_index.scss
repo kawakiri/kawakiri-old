@@ -1,0 +1,55 @@
+@use "variables" as *;
+
+.card {
+    border: if($card-border-width, $card-border-width solid $card-border-color, null);
+    border-radius: $card-border-radius;
+    overflow: hidden;
+
+    &__header {
+        padding: $card-header-padding-y $card-header-padding-x;
+        background-color: $card-header-background-color;
+    }
+
+    &__body {
+        padding: $card-body-padding-y $card-body-padding-x;
+
+        > :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: $card-title-margin-bottom;
+    }
+
+    &__subtitle {
+        margin-top: $card-subtitle-margin-top;
+        margin-bottom: $card-title-margin-bottom;
+        color: $card-subtitle-color;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+    }
+
+    &__footer {
+        padding: $card-footer-padding-y $card-footer-padding-x;
+        background-color: $card-footer-background-color;
+    }
+
+    &--linked {
+        position: relative;
+    }
+
+    &__link::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+}

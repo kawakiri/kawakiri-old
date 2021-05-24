@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>smigles UI</title>
+    <link rel="stylesheet" href="../dist/kawakiri.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <nav class="page__nav sidebar shadow">
+        <ul class="sidebar__menu">
+            <li class="sidebar__item"><a class="sidebar__link" href="#alert">Alert</a></li>
+            <li class="sidebar__item"><a class="sidebar__link" href="#badge">Badge</a></li>
+            <li class="sidebar__item"><a class="sidebar__link" href="#breadcrumbs">Breadcrumbs</a></li>
+            <li class="sidebar__item"><a class="sidebar__link" href="#button">Button</a></li>
+            <li class="sidebar__item"><a class="sidebar__link" href="#button-group">Button group</a></li>
+            <li class="sidebar__item"><a class="sidebar__link" href="#card">Card</a></li>
+            <li class="sidebar__item"><a class="sidebar__link" href="#close-button">Close button</a></li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="#form">Form</a>
+                <ul class="sidebar__menu sidebar__menu--nested">
+                    <li class="sidebar__item"><a class="sidebar__link" href="#text-field">Text field</a></li>
+                    <li class="sidebar__item"><a class="sidebar__link" href="#select">Select</a></li>
+                    <li class="sidebar__item"><a class="sidebar__link" href="#check">Check</a></li>
+                    <li class="sidebar__item"><a class="sidebar__link" href="#file-selector">File selector</a></li>
+                </ul>
+            </li>
+            <li class="sidebar__item"><a class="sidebar__link" href="#modal">Modal</a></li>
+            <li class="sidebar__item"><a class="sidebar__link" href="#pagination">Pagination</a></li>
+            <li class="sidebar__item"><a class="sidebar__link" href="#popup">Popup</a></li>
+            <li class="sidebar__item"><a class="sidebar__link" href="#progress">Progress</a></li>
+            <li class="sidebar__item"><a class="sidebar__link" href="#sidebar">Sidebar</a></li>
+            <li class="sidebar__item"><a class="sidebar__link" href="#tabs">Tabs</a></li>
+            <li class="sidebar__item"><a class="sidebar__link" href="#topbar">Topbar</a></li>
+        </ul>
+    </nav>
+
+    <main class="page__main">
+        <h1>smigles UI</h1>
+
+        <div class="section">
+            <h2 id="alert">Alert</h2>
+
+            <div class="alert alert--primary">
+                <h6>Lorem ipsum</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie quam in nisi sodales gravida. Sed commodo cursus maximus. Fusce tristique, ipsum non tempor fringilla, velit magna ullamcorper purus, quis efficitur justo risus porttitor ex. Fusce nulla lacus, fermentum sed odio ut, dignissim egestas nulla. Aliquam pellentesque nulla id tristique ultrices. Aliquam erat volutpat. Fusce purus turpis, finibus nec est sit amet, tempus mattis nulla.</p>
+            </div>
+
+            <br>
+
+            <div class="alert alert--success">
+                <h6>Lorem ipsum</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie quam in nisi sodales gravida. Sed commodo cursus maximus. Fusce tristique, ipsum non tempor fringilla, velit magna ullamcorper purus, quis efficitur justo risus porttitor ex. Fusce nulla lacus, fermentum sed odio ut, dignissim egestas nulla. Aliquam pellentesque nulla id tristique ultrices. Aliquam erat volutpat. Fusce purus turpis, finibus nec est sit amet, tempus mattis nulla.</p>
+            </div>
+
+            <br>
+
+            <div class="alert alert--warning">
+                <h6>Lorem ipsum</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie quam in nisi sodales gravida. Sed commodo cursus maximus. Fusce tristique, ipsum non tempor fringilla, velit magna ullamcorper purus, quis efficitur justo risus porttitor ex. Fusce nulla lacus, fermentum sed odio ut, dignissim egestas nulla. Aliquam pellentesque nulla id tristique ultrices. Aliquam erat volutpat. Fusce purus turpis, finibus nec est sit amet, tempus mattis nulla.</p>
+            </div>
+
+            <br>
+
+            <div class="alert alert--danger">
+                <h6>Lorem ipsum</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie quam in nisi sodales gravida. Sed commodo cursus maximus. Fusce tristique, ipsum non tempor fringilla, velit magna ullamcorper purus, quis efficitur justo risus porttitor ex. Fusce nulla lacus, fermentum sed odio ut, dignissim egestas nulla. Aliquam pellentesque nulla id tristique ultrices. Aliquam erat volutpat. Fusce purus turpis, finibus nec est sit amet, tempus mattis nulla.</p>
+            </div>
+
+            <br>
+
+            <div class="alert alert--primary alert--hideable">
+                <button type="button" class="button close-button alert__close-button" data-component="alert" data-action="hide"></button>
+                <h6>Lorem ipsum</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie quam in nisi sodales gravida. Sed commodo cursus maximus. Fusce tristique, ipsum non tempor fringilla, velit magna ullamcorper purus, quis efficitur justo risus porttitor ex. Fusce nulla lacus, fermentum sed odio ut, dignissim egestas nulla. Aliquam pellentesque nulla id tristique ultrices. Aliquam erat volutpat. Fusce purus turpis, finibus nec est sit amet, tempus mattis nulla.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="badge">Badge</h2>
+
+            <span class="badge">Badge</span>
+        </div>
+
+        <div class="section">
+            <h2 id="breadcrumbs">Breadcrumbs</h2>
+
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Home</a></li>
+                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Components</a></li>
+                <li class="breadcrumbs__item active">Breadcrumbs</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 id="button">Button</h2>
+
+            <button type="button" class="button button--filled button--primary">Primary</button>
+            <button type="button" class="button button--outline button--primary">Primary</button>
+            <button type="button" class="button button--primary">Primary</button>
+
+            <button type="button" class="button button--filled button--danger">Danger</button>
+            <button type="button" class="button button--outline button--danger">Danger</button>
+            <button type="button" class="button button--danger">Danger</button>
+
+            <br><br>
+
+            <button type="button" class="button button--filled button--primary" disabled>Primary</button>
+            <button type="button" class="button button--outline button--primary" disabled>Primary</button>
+            <button type="button" class="button button--primary" disabled>Primary</button>
+
+            <button type="button" class="button button--filled button--danger" disabled>Danger</button>
+            <button type="button" class="button button--outline button--danger" disabled>Danger</button>
+            <button type="button" class="button button--danger" disabled>Danger</button>
+
+            <br><br>
+
+            <button type="button" class="button button--filled button--primary button--sm">Small button</button>
+            <button type="button" class="button button--filled button--primary button--lg">Large button</button>
+        </div>
+
+        <div class="section">
+            <h2 id="button-group">Button group</h2>
+
+            <div class="button-group">
+                <button type="button" class="button button--outline button--primary">Button 1</button>
+                <button type="button" class="button button--outline button--primary">Button 2</button>
+                <button type="button" class="button button--outline button--primary">Button 3</button>
+            </div>
+
+            <div class="button-group button-group--sm">
+                <button type="button" class="button button--outline button--primary">Small button 1</button>
+                <button type="button" class="button button--outline button--primary">Small button 2</button>
+                <button type="button" class="button button--outline button--primary">Small button 3</button>
+            </div>
+
+            <div class="button-group button-group--lg">
+                <button type="button" class="button button--outline button--primary">Large button 1</button>
+                <button type="button" class="button button--outline button--primary">Large button 2</button>
+                <button type="button" class="button button--outline button--primary">Large button 3</button>
+            </div>
+
+            <br><br>
+
+            <div class="button-group button-group--vertical">
+                <button type="button" class="button button--outline button--primary">Button 1</button>
+                <button type="button" class="button button--outline button--primary">Button 2</button>
+                <button type="button" class="button button--outline button--primary">Button 3</button>
+            </div>
+
+            <div class="button-group button-group--vertical button-group--sm">
+                <button type="button" class="button button--outline button--primary">Small button 1</button>
+                <button type="button" class="button button--outline button--primary">Small button 2</button>
+                <button type="button" class="button button--outline button--primary">Small button 3</button>
+            </div>
+
+            <div class="button-group button-group--vertical button-group--lg">
+                <button type="button" class="button button--outline button--primary">Large button 1</button>
+                <button type="button" class="button button--outline button--primary">Large button 2</button>
+                <button type="button" class="button button--outline button--primary">Large button 3</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="card">Card</h2>
+
+            <div class="card shadow" style="width: 300px;">
+                <div class="card__header">
+                    Aenean nec
+                </div>
+                <img src="https://placekitten.com/300/200" class="card__image" alt="Cat">
+                <div class="card__body">
+                    <h6 class="card__title">Lorem ipsum</h6>
+                    <p class="card__subtitle">Dolor sit amet</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec aliquam dolor.</p>
+                </div>
+                <div class="card__footer">
+                    Aliquam dolor
+                </div>
+            </div>
+
+            <br>
+
+            <div class="card card--linked shadow" style="width: 300px;">
+                <div class="card__header">
+                    Aenean nec
+                </div>
+                <div class="card__body">
+                    <h6 class="card__title"><a href="#" class="card__link">Lorem ipsum</a></h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec aliquam dolor.</p>
+                </div>
+                <div class="card__footer">
+                    Aliquam dolor
+                </div>
+            </div>
+
+            <br>
+
+            <div class="card card--linked shadow" style="width: 300px;">
+                <div class="card__header">
+                    Aenean nec
+                </div>
+                <div class="card__body">
+                    <h6 class="card__title">Lorem ipsum</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec aliquam dolor.</p>
+                    <a href="#" class="button button--outline button--primary card__link">Link</a>
+                </div>
+                <div class="card__footer">
+                    Aliquam dolor
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="close-button">Close button</h2>
+
+            <button type="button" class="button close-button"></button>
+        </div>
+
+        <div class="section">
+            <h2 id="form">Form</h2>
+
+            <h3 id="text-field">Text field</h3>
+
+            <div class="form-group">
+                <label for="text1" class="form-label">Логин</label>
+                <input type="text" id="text1" class="text-field" placeholder="Логин">
+                <div class="form-text">Введите логин.</div>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="text2" class="form-label">Логин</label>
+                <input type="text" id="text2" class="text-field" placeholder="Логин" disabled>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="textarea1" class="form-label">Текст</label>
+                <textarea id="textarea1" class="text-field" placeholder="Текст"></textarea>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="textarea2" class="form-label">Текст</label>
+                <textarea id="textarea2" class="text-field" placeholder="Текст" disabled></textarea>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="text3" class="form-label">Логин</label>
+                <input type="text" id="text3" class="text-field text-field--sm" placeholder="Логин">
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="text4" class="form-label">Логин</label>
+                <input type="text" id="text4" class="text-field text-field--lg" placeholder="Логин">
+            </div>
+
+            <h3 id="select">Select</h3>
+
+            <div class="form-group">
+                <select class="select">
+                    <option>Пункт 1</option>
+                    <option>Пункт 2</option>
+                    <option>Пункт 3</option>
+                    <option>Пункт 4</option>
+                    <option>Пункт 5</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <select class="select" disabled>
+                    <option>Пункт 1</option>
+                    <option>Пункт 2</option>
+                    <option>Пункт 3</option>
+                    <option>Пункт 4</option>
+                    <option>Пункт 5</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <select class="select" size="3">
+                    <option>Пункт 1</option>
+                    <option>Пункт 2</option>
+                    <option>Пункт 3</option>
+                    <option>Пункт 4</option>
+                    <option>Пункт 5</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <select class="select" multiple size="3">
+                    <option>Пункт 1</option>
+                    <option>Пункт 2</option>
+                    <option>Пункт 3</option>
+                    <option>Пункт 4</option>
+                    <option>Пункт 5</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <select class="select select--sm">
+                    <option>Пункт 1</option>
+                    <option>Пункт 2</option>
+                    <option>Пункт 3</option>
+                    <option>Пункт 4</option>
+                    <option>Пункт 5</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <select class="select select--lg">
+                    <option>Пункт 1</option>
+                    <option>Пункт 2</option>
+                    <option>Пункт 3</option>
+                    <option>Пункт 4</option>
+                    <option>Пункт 5</option>
+                </select>
+            </div>
+
+            <h3 id="check">Check</h3>
+
+            <div class="form-group">
+                <div class="check-container">
+                    <input type="checkbox" name="checkbox1" id="checkbox1" class="check-input">
+                    <label for="checkbox1" class="check-label">Checkbox 1</label>
+                </div>
+                <div class="check-container">
+                    <input type="checkbox" name="checkbox2" id="checkbox2" class="check-input" checked>
+                    <label for="checkbox2" class="check-label">Checkbox 2</label>
+                </div>
+                <div class="check-container">
+                    <input type="checkbox" name="checkbox3" id="checkbox3" class="check-input" disabled>
+                    <label for="checkbox3" class="check-label">Checkbox 3</label>
+                </div>
+                <div class="check-container">
+                    <input type="checkbox" name="checkbox4" id="checkbox4" class="check-input" checked disabled>
+                    <label for="checkbox4" class="check-label">Checkbox 4</label>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <div class="check-container">
+                    <input type="radio" name="radio1" id="radio1" class="check-input">
+                    <label for="radio1" class="check-label">Radio 1</label>
+                </div>
+                <div class="check-container">
+                    <input type="radio" name="radio1" id="radio2" class="check-input" checked>
+                    <label for="radio2" class="check-label">Radio 2</label>
+                </div>
+                <div class="check-container">
+                    <input type="radio" name="radio2" id="radio3" class="check-input" disabled>
+                    <label for="radio3" class="check-label">Radio 3</label>
+                </div>
+                <div class="check-container">
+                    <input type="radio" name="radio2" id="radio4" class="check-input" checked disabled>
+                    <label for="radio4" class="check-label">Radio 4</label>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <div class="check-container check-container-switch">
+                    <input type="checkbox" name="switch1" id="switch1" class="check-input check-input--switch">
+                    <label for="switch1" class="check-label">Switch 1</label>
+                </div>
+                <div class="check-container check-container-switch">
+                    <input type="checkbox" name="switch2" id="switch2" class="check-input check-input--switch" checked>
+                    <label for="switch2" class="check-label">Switch 2</label>
+                </div>
+                <div class="check-container check-container-switch">
+                    <input type="checkbox" name="switch3" id="switch3" class="check-input check-input--switch" disabled>
+                    <label for="switch3" class="check-label">Switch 3</label>
+                </div>
+                <div class="check-container check-container-switch">
+                    <input type="checkbox" name="switch4" id="switch4" class="check-input check-input--switch" checked disabled>
+                    <label for="switch4" class="check-label">Switch 4</label>
+                </div>
+            </div>
+
+            <h3 id="file-selector">File selector</h3>
+
+            <div class="form-group">
+                <label for="file1" class="form-label">Выбрать файл</label>
+                <input type="file" id="file1" class="file-selector">
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="file2" class="form-label">Выбрать файлы</label>
+                <input type="file" id="file2" class="file-selector" multiple>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="file3" class="form-label">Выбрать файл</label>
+                <input type="file" id="file3" class="file-selector" disabled>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="file4" class="form-label">Выбрать файл</label>
+                <input type="file" id="file4" class="file-selector file-selector--sm">
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="file5" class="form-label">Выбрать файл</label>
+                <input type="file" id="file5" class="file-selector file-selector--lg">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="modal">Modal</h2>
+
+            <button type="button" class="button button--filled button--primary" data-component="modal" data-action="toggle" data-target="#modal1">Modal</button>
+            <div id="modal1" class="modal">
+                <div class="modal__dialog">
+                    <div class="modal__content">
+                        <div class="modal__header">
+                            <h5 class="modal__title">Modal title</h5>
+                            <button type="button" class="button close-button modal__close-button" data-component="modal" data-action="hide"></button>
+                        </div>
+                        <div class="modal__body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie quam in nisi sodales gravida. Sed commodo cursus maximus. Fusce tristique, ipsum non tempor fringilla, velit magna ullamcorper purus, quis efficitur justo risus porttitor ex. Fusce nulla lacus, fermentum sed odio ut, dignissim egestas nulla. Aliquam pellentesque nulla id tristique ultrices. Aliquam erat volutpat. Fusce purus turpis, finibus nec est sit amet, tempus mattis nulla.</p>
+                        </div>
+                        <div class="modal__footer">
+                            <button type="button" class="button button--outline button--primary" data-component="modal" data-action="hide">Close</button>
+                            <button type="button" class="button button--filled button--primary">Action</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="button button--filled button--primary" data-component="modal" data-action="toggle" data-target="#modal2">Long modal</button>
+            <div id="modal2" class="modal">
+                <div class="modal__dialog">
+                    <div class="modal__content">
+                        <div class="modal__header">
+                            <h5 class="modal__title">Modal title</h5>
+                            <button type="button" class="button close-button modal__close-button" data-component="modal" data-action="hide"></button>
+                        </div>
+                        <div class="modal__body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie quam in nisi sodales gravida. Sed commodo cursus maximus. Fusce tristique, ipsum non tempor fringilla, velit magna ullamcorper purus, quis efficitur justo risus porttitor ex. Fusce nulla lacus, fermentum sed odio ut, dignissim egestas nulla. Aliquam pellentesque nulla id tristique ultrices. Aliquam erat volutpat. Fusce purus turpis, finibus nec est sit amet, tempus mattis nulla.</p>
+                            <p>Justo donec enim diam vulputate ut pharetra sit amet. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Aenean et tortor at risus viverra adipiscing at. Pharetra et ultrices neque ornare aenean euismod elementum. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Eget sit amet tellus cras adipiscing enim eu turpis. Viverra justo nec ultrices dui sapien eget. Adipiscing tristique risus nec feugiat. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Mattis molestie a iaculis at erat. Tristique senectus et netus et. At risus viverra adipiscing at in. Enim lobortis scelerisque fermentum dui faucibus in. Enim ut sem viverra aliquet eget sit amet tellus. Mi ipsum faucibus vitae aliquet nec ullamcorper sit. Adipiscing commodo elit at imperdiet dui accumsan.</p>
+                            <p>Dis parturient montes nascetur ridiculus mus. Nullam vehicula ipsum a arcu. Amet tellus cras adipiscing enim eu. Duis convallis convallis tellus id interdum. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. Luctus accumsan tortor posuere ac ut consequat. Quis viverra nibh cras pulvinar mattis. Velit egestas dui id ornare arcu. Maecenas ultricies mi eget mauris pharetra et ultrices. Tristique senectus et netus et malesuada. A diam sollicitudin tempor id eu nisl nunc. Mattis pellentesque id nibh tortor id aliquet lectus. Feugiat in fermentum posuere urna nec tincidunt. Magna etiam tempor orci eu lobortis elementum. Venenatis lectus magna fringilla urna porttitor. Nulla pharetra diam sit amet nisl suscipit adipiscing. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet.</p>
+                            <p>Nisi est sit amet facilisis magna etiam tempor orci. Nam libero justo laoreet sit. Est lorem ipsum dolor sit amet consectetur adipiscing. Cras semper auctor neque vitae tempus quam pellentesque nec. Fermentum posuere urna nec tincidunt praesent. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Lectus proin nibh nisl condimentum id. Suspendisse sed nisi lacus sed viverra tellus in. Tincidunt eget nullam non nisi est sit. Auctor eu augue ut lectus arcu. Pharetra vel turpis nunc eget lorem. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Fusce id velit ut tortor pretium. Aliquam etiam erat velit scelerisque in dictum non consectetur. Eget velit aliquet sagittis id consectetur purus ut faucibus. Nisl nisi scelerisque eu ultrices vitae auctor. Quam adipiscing vitae proin sagittis nisl rhoncus mattis.</p>
+                        </div>
+                        <div class="modal__footer">
+                            <button type="button" class="button button--outline button--primary" data-component="modal" data-action="hide">Close</button>
+                            <button type="button" class="button button--filled button--primary">Action</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="button button--filled button--primary" data-component="modal" data-action="toggle" data-target="#modal3">Small modal</button>
+            <div id="modal3" class="modal">
+                <div class="modal__dialog modal__dialog--sm">
+                    <div class="modal__content">
+                        <div class="modal__header">
+                            <h5 class="modal__title">Modal title</h5>
+                            <button type="button" class="button close-button modal__close-button" data-component="modal" data-action="hide"></button>
+                        </div>
+                        <div class="modal__body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie quam in nisi sodales gravida. Sed commodo cursus maximus. Fusce tristique, ipsum non tempor fringilla, velit magna ullamcorper purus, quis efficitur justo risus porttitor ex. Fusce nulla lacus, fermentum sed odio ut, dignissim egestas nulla. Aliquam pellentesque nulla id tristique ultrices. Aliquam erat volutpat. Fusce purus turpis, finibus nec est sit amet, tempus mattis nulla.</p>
+                        </div>
+                        <div class="modal__footer">
+                            <button type="button" class="button button--outline button--primary" data-component="modal" data-action="hide">Close</button>
+                            <button type="button" class="button button--filled button--primary">Action</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="button button--filled button--primary" data-component="modal" data-action="toggle" data-target="#modal4">Large modal</button>
+            <div id="modal4" class="modal">
+                <div class="modal__dialog modal__dialog--lg">
+                    <div class="modal__content">
+                        <div class="modal__header">
+                            <h5 class="modal__title">Modal title</h5>
+                            <button type="button" class="button close-button modal__close-button" data-component="modal" data-action="hide"></button>
+                        </div>
+                        <div class="modal__body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie quam in nisi sodales gravida. Sed commodo cursus maximus. Fusce tristique, ipsum non tempor fringilla, velit magna ullamcorper purus, quis efficitur justo risus porttitor ex. Fusce nulla lacus, fermentum sed odio ut, dignissim egestas nulla. Aliquam pellentesque nulla id tristique ultrices. Aliquam erat volutpat. Fusce purus turpis, finibus nec est sit amet, tempus mattis nulla.</p>
+                        </div>
+                        <div class="modal__footer">
+                            <button type="button" class="button button--outline button--primary" data-component="modal" data-action="hide">Close</button>
+                            <button type="button" class="button button--filled button--primary">Action</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="pagination">Pagination</h2>
+
+            <ul class="pagination">
+                <li class="pagination__item"><a href="#" class="pagination__link">Previous</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link active">5</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link disabled">Next</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 id="popup">Popup</h2>
+
+            <div class="popup">
+                <button type="button" class="button button--filled button--primary popup__button" data-component="popup" data-action="show">Popup 1</button>
+                <div class="popup__content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie quam in nisi sodales gravida. Sed commodo cursus maximus. Fusce tristique, ipsum non tempor fringilla, velit magna ullamcorper purus, quis efficitur justo risus porttitor ex. Fusce nulla lacus, fermentum sed odio ut, dignissim egestas nulla. Aliquam pellentesque nulla id tristique ultrices. Aliquam erat volutpat. Fusce purus turpis, finibus nec est sit amet, tempus mattis nulla.
+                </div>
+                <!--<ul class="popup__menu">
+                    <li><a href="#" class="popup__item">Item 1</a></li>
+                    <li><a href="#" class="popup__item">Item 2</a></li>
+                    <li><a href="#" class="popup__item">Item 3</a></li>
+                    <li><a href="#" class="popup__item">Item 4</a></li>
+                </ul>-->
+            </div>
+
+            <div class="popup">
+                <button type="button" class="button button--filled button--primary popup__button" data-component="popup" data-action="show">Popup 2</button>
+                <div class="popup__content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie quam in nisi sodales gravida. Sed commodo cursus maximus. Fusce tristique, ipsum non tempor fringilla, velit magna ullamcorper purus, quis efficitur justo risus porttitor ex. Fusce nulla lacus, fermentum sed odio ut, dignissim egestas nulla. Aliquam pellentesque nulla id tristique ultrices. Aliquam erat volutpat. Fusce purus turpis, finibus nec est sit amet, tempus mattis nulla.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="progress">Progress</h2>
+
+            <div class="progress">
+                <div class="progress__bar" style="width: 25%;">25%</div>
+            </div>
+
+            <br>
+
+            <div class="progress">
+                <div class="progress__bar progress__bar--striped" style="width: 50%;">50%</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="sidebar">Sidebar</h2>
+
+            <div class="sidebar shadow" style="width: 250px;">
+                <a href="#" class="sidebar__title">Sidebar</a>
+                <ul class="sidebar__menu">
+                    <li class="sidebar__item"><a href="#" class="sidebar__link active">Item 1</a></li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">Item 2</a>
+                        <ul class="sidebar__menu sidebar__menu--nested">
+                            <li class="sidebar__item"><a href="#" class="sidebar__link">Item 2.1</a></li>
+                            <li class="sidebar__item"><a href="#" class="sidebar__link active">Item 2.2</a></li>
+                            <li class="sidebar__item"><a href="#" class="sidebar__link">Item 2.3</a></li>
+                        </ul>
+                    </li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Item 3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="tabs">Tabs</h2>
+            <ul class="tabs tabs--lined">
+                <li class="tabs__item"><a href="#" class="tabs__link">Item 1</a></li>
+                <li class="tabs__item"><a href="#" class="tabs__link active">Item 2</a></li>
+                <li class="tabs__item"><a href="#" class="tabs__link">Item 3</a></li>
+                <li class="tabs__item"><a href="#" class="tabs__link disabled">Item 4</a></li>
+            </ul>
+
+            <br>
+
+            <ul class="tabs tabs--outline">
+                <li class="tabs__item"><a href="#" class="tabs__link">Item 1</a></li>
+                <li class="tabs__item"><a href="#" class="tabs__link active">Item 2</a></li>
+                <li class="tabs__item"><a href="#" class="tabs__link">Item 3</a></li>
+                <li class="tabs__item"><a href="#" class="tabs__link disabled">Item 4</a></li>
+            </ul>
+
+            <br>
+
+            <ul class="tabs tabs--pilled">
+                <li class="tabs__item"><a href="#" class="tabs__link">Item 1</a></li>
+                <li class="tabs__item"><a href="#" class="tabs__link active">Item 2</a></li>
+                <li class="tabs__item"><a href="#" class="tabs__link">Item 3</a></li>
+                <li class="tabs__item"><a href="#" class="tabs__link disabled">Item 4</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 id="topbar">Topbar</h2>
+
+            <div class="topbar shadow">
+                <a href="#" class="topbar__title">Topbar</a>
+                <ul class="topbar__menu" style="margin-right: auto;">
+                    <li class="topbar__item"><a href="#" class="topbar__link">Item 1</a></li>
+                    <li class="topbar__item"><a href="#" class="topbar__link active">Item 2</a></li>
+                    <li class="topbar__item"><a href="#" class="topbar__link">Item 3</a></li>
+                </ul>
+                <form style="display: flex;">
+                    <input type="text" class="text-field" style="margin-right: 0.5em;" placeholder="Input">
+                    <button type="button" class="button button--outline button--primary">Button</button>
+                </form>
+            </div>
+        </div>
+
+        <!--<div class="section">
+            <h2 id=""></h2>
+
+
+        </div>-->
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

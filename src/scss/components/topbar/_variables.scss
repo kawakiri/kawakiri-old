@@ -1,0 +1,17 @@
+@use "../../variables" as *;
+
+$topbar-padding-x: 1em !default;
+
+$topbar-title-margin-right: 1em !default;
+$topbar-title-font-size: 1.25em !default;
+$topbar-title-color: inherit !default;
+
+$topbar-link-padding-y: 1em !default;
+$topbar-link-padding-x: 0.5em !default;
+$topbar-link-color: $gray !default;
+
+$topbar-link-hover-background-color: $hover-background-color !default;
+
+$topbar-link-active-color: $primary !default;
+$topbar-link-active-line-width: 2px !default;
+$topbar-link-active-line-color: $primary !default;

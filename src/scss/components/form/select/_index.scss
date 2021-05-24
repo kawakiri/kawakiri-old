@@ -1,0 +1,42 @@
+@use "variables" as *;
+
+.select {
+    display: block;
+    width: 100%;
+    padding: $select-padding-y ($select-padding-x + $select-arrow-width + $select-arrow-spacing) $select-padding-y $select-padding-x;
+    border: $select-border-width solid $select-border-color;
+    border-radius: $select-border-radius;
+    background-color: $select-background-color;
+    background-image: $select-arrow-image;
+    background-position: right $select-padding-x center;
+    background-size: $select-arrow-width;
+    background-repeat: no-repeat;
+    appearance: none;
+    cursor: pointer;
+    transition: border-color $select-transition-duration;
+
+    &[multiple],
+    &[size]:not([size="1"]) {
+        padding-right: $select-padding-x;
+        background-image: none;
+        cursor: auto;
+    }
+
+    &:focus {
+        border-color: $select-focus-border-color;
+        outline: 0;
+    }
+
+    &:disabled {
+        background-color: $select-disabled-background-color;
+        cursor: auto;
+    }
+
+    &--sm {
+        font-size: $select-sm-font-size;
+    }
+
+    &--lg {
+        font-size: $select-lg-font-size;
+    }
+}

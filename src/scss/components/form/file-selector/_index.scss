@@ -1,0 +1,58 @@
+@use "variables" as *;
+
+.file-selector {
+    display: block;
+    width: 100%;
+    padding: $file-selector-padding-y $file-selector-padding-x;
+    border: $file-selector-border-width solid $file-selector-border-color;
+    border-radius: $file-selector-border-radius;
+    background-color: $file-selector-background-color;
+    cursor: pointer;
+    transition: border-color $file-selector-transition-duration;
+
+    &::-webkit-file-upload-button,
+    &::file-selector-button {
+        margin: (-$file-selector-padding-y) $file-selector-padding-x (-$file-selector-padding-y) (-$file-selector-padding-x);
+        padding: $file-selector-padding-y $file-selector-padding-x;
+        border: 0;
+        border-right: $file-selector-border-width solid $file-selector-border-color;
+        background-color: $file-selector-button-background-color;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        color: inherit;
+        pointer-events: none;
+        cursor: pointer;
+        transition: background-color $file-selector-transition-duration;
+    }
+
+    &:hover:not(:disabled) {
+        &::-webkit-file-upload-button,
+        &::file-selector-button {
+            background-color: $file-selector-button-hover-background-color;
+        }
+    }
+
+    &:focus {
+        border-color: $file-selector-focus-border-color;
+        outline: 0;
+    }
+
+    &:disabled {
+        background-color: $file-selector-disabled-background-color;
+        cursor: auto;
+
+        &::-webkit-file-upload-button,
+        &::file-selector-button {
+            background-color: $file-selector-disabled-background-color;
+        }
+    }
+
+    &--sm {
+        font-size: $file-selector-sm-font-size;
+    }
+
+    &--lg {
+        font-size: $file-selector-lg-font-size;
+    }
+}
