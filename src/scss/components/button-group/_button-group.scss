@@ -1,5 +1,5 @@
-@use "../button/variables" as *;
-@use "variables" as *;
+@use "../button/button-variables" as *;
+@use "button-group-variables" as *;
 
 .button-group {
     display: inline-flex;

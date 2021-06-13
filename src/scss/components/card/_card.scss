@@ -1,4 +1,4 @@
-@use "variables" as *;
+@use "card-variables" as *;
 
 .card {
     border: if($card-border-width, $card-border-width solid $card-border-color, null);

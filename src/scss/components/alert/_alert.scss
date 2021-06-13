@@ -1,5 +1,5 @@
 @use "../../functions" as *;
-@use "variables" as *;
+@use "alert-variables" as *;
 
 .alert {
     padding: $alert-padding-y $alert-padding-x;

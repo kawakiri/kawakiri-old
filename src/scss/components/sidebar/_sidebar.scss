@@ -1,5 +1,5 @@
 @use "../../mixins" as *;
-@use "variables" as *;
+@use "sidebar-variables" as *;
 
 .sidebar {
     padding: $sidebar-padding-y $sidebar-padding-x;
