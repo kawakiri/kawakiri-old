@@ -7,7 +7,7 @@ class Kawakiri {
         window.kawakiri = this;
 
         for (const component of components) {
-            this[component.name] = component;
+            this[component.componentName] = component;
             component.init();
         }
     }

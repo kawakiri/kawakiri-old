@@ -1,7 +1,7 @@
 import Component from './component.js';
 
 export default class Alert extends Component {
-    static componentName = 'alert';
+    static componentName = 'Alert';
     static classes = {
         root: 'alert',
         hidden: 'alert--hidden'

@@ -89,7 +89,7 @@
 
   }
 
-  Alert.componentName = 'alert';
+  Alert.componentName = 'Alert';
   Alert.classes = {
     root: 'alert',
     hidden: 'alert--hidden'
@@ -201,7 +201,7 @@
 
   }
 
-  Modal.componentName = 'modal';
+  Modal.componentName = 'Modal';
   Modal.classes = {
     root: 'modal',
     shown: 'modal--shown',
@@ -300,7 +300,7 @@
 
   }
 
-  Popup.componentName = 'popup';
+  Popup.componentName = 'Popup';
   Popup.classes = {
     root: 'popup',
     button: 'popup__button',
@@ -316,7 +316,7 @@
       window.kawakiri = this;
 
       for (const component of components) {
-        this[component.name] = component;
+        this[component.componentName] = component;
         component.init();
       }
     }

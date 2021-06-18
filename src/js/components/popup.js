@@ -1,7 +1,7 @@
 import Component from './component.js';
 
 export default class Popup extends Component {
-    static componentName = 'popup';
+    static componentName = 'Popup';
     static classes = {
         root: 'popup',
         button: 'popup__button',

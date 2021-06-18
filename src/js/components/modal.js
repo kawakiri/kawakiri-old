@@ -1,7 +1,7 @@
 import Component from './component.js';
 
 export default class Modal extends Component {
-    static componentName = 'modal';
+    static componentName = 'Modal';
     static classes = {
         root: 'modal',
         shown: 'modal--shown',
