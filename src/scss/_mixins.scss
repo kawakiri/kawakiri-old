@@ -18,6 +18,9 @@
     border: 0 !important;
     overflow: hidden !important;
     clip: rect(0, 0, 0, 0) !important;
+    -webkit-clip-path: inset(100%) !important;
+    clip-path: inset(100%) !important;
+    white-space: nowrap !important;
 }
 
 @mixin media-breakpoints {
